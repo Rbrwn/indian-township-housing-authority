@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 };
 
 const postingDates = [
-  { semester:'Fall Semester',   deadline:'June 1',     notes:'For fall term enrollment' },
-  { semester:'Spring Semester', deadline:'November 1', notes:'For spring term enrollment' },
-  { semester:'Summer Session',  deadline:'April 1',    notes:'Limited funding — apply early' },
+  { semester: 'Fall Semester',   deadline: 'June 1',     notes: 'For fall term enrollment' },
+  { semester: 'Spring Semester', deadline: 'November 1', notes: 'For spring term enrollment' },
+  { semester: 'Summer Session',  deadline: 'April 1',    notes: 'Limited funding — apply early' },
 ];
 
 const eligibility = [
@@ -32,10 +32,10 @@ const notEligible = [
 ];
 
 const preferences = [
-  { label:'Tribal Enrollment',    detail:'Enrolled members of the Passamaquoddy Tribe at Indian Township receive first preference.' },
-  { label:'Full-Time Enrollment', detail:'Students enrolled full-time receive preference over part-time students when funding is limited.' },
-  { label:'Academic Standing',    detail:'Students in good academic standing at their institution.' },
-  { label:'Continuing Students',  detail:'Students who have successfully maintained enrollment from a prior CHAP-funded semester.' },
+  { label: 'Tribal Enrollment',    detail: 'Enrolled members of the Passamaquoddy Tribe at Indian Township receive first preference.' },
+  { label: 'Full-Time Enrollment', detail: 'Students enrolled full-time receive preference over part-time students when funding is limited.' },
+  { label: 'Academic Standing',    detail: 'Students in good academic standing at their institution.' },
+  { label: 'Continuing Students',  detail: 'Students who have successfully maintained enrollment from a prior CHAP-funded semester.' },
 ];
 
 const requiredDocs = [
@@ -76,7 +76,7 @@ export default function ChapPage() {
                 <p className="text-earth-200 text-sm font-body">Helping tribal students afford off-campus housing while pursuing their education</p>
               </div>
             </div>
-            <a href="/chap-application.pdf" download className="inline-flex items-center gap-2 bg-white text-earth-700 px-5 py-3 rounded-lg font-body font-semibold text-sm hover:bg-cream-200 transition-colors flex-shrink-0" aria-label="Download CHAP Application PDF">
+            <a href="/chap-application.pdf" download className="inline-flex items-center gap-2 bg-white text-earth-700 px-5 py-3 rounded-lg font-body font-semibold text-sm hover:bg-cream-200 transition-colors flex-shrink-0">
               <Download className="w-4 h-4" aria-hidden="true" />Download CHAP Application
             </a>
           </div>
@@ -88,7 +88,6 @@ export default function ChapPage() {
           <div className="grid lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2 space-y-8">
 
-              {/* About */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-cream-300">
                 <div className="accent-bar" />
                 <h2 className="section-heading text-2xl mb-3">About CHAP</h2>
@@ -98,12 +97,11 @@ export default function ChapPage() {
                 </div>
               </div>
 
-              {/* Posting Dates */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-cream-300">
                 <h2 className="font-heading font-bold text-forest-800 text-xl mb-1 flex items-center gap-2">
                   <Calendar className="w-5 h-5" aria-hidden="true" />Application Posting Dates &amp; Deadlines
                 </h2>
-                <p className="text-gray-600 font-body text-sm mb-4">Applications are accepted each semester. Submit early — funding is limited and awarded in order of receipt to eligible applicants.</p>
+                <p className="text-gray-600 font-body text-sm mb-4">Submit early — funding is limited and awarded in order of receipt to eligible applicants.</p>
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm font-body border-collapse">
                     <thead>
@@ -126,11 +124,10 @@ export default function ChapPage() {
                 </div>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mt-4 flex items-start gap-2">
                   <AlertCircle className="w-4 h-4 text-yellow-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                  <p className="text-yellow-700 font-body text-xs">Deadlines are subject to change. Contact the Housing Authority office to confirm current posting dates before applying.</p>
+                  <p className="text-yellow-700 font-body text-xs">Deadlines are subject to change. Contact the Housing Authority office to confirm current posting dates.</p>
                 </div>
               </div>
 
-              {/* Preferences */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-cream-300">
                 <h2 className="font-heading font-bold text-forest-800 text-xl mb-4 flex items-center gap-2">
                   <Star className="w-5 h-5" aria-hidden="true" />Selection Preferences
@@ -138,7 +135,7 @@ export default function ChapPage() {
                 <ol className="space-y-4" role="list">
                   {preferences.map((pref, i) => (
                     <li key={pref.label} className="flex items-start gap-3 bg-forest-50 rounded-lg p-4 border border-forest-100">
-                      <div className="w-7 h-7 rounded-full bg-forest-800 text-white flex items-center justify-center font-bold text-xs flex-shrink-0" aria-hidden="true">{i + 1}</div>
+                      <div className="w-7 h-7 rounded-full bg-forest-800 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">{i + 1}</div>
                       <div>
                         <p className="font-heading font-bold text-forest-800 text-sm">{pref.label}</p>
                         <p className="text-gray-600 font-body text-xs leading-relaxed">{pref.detail}</p>
@@ -148,7 +145,6 @@ export default function ChapPage() {
                 </ol>
               </div>
 
-              {/* Required Docs */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-cream-300">
                 <h2 className="font-heading font-bold text-forest-800 text-xl mb-4 flex items-center gap-2">
                   <FileText className="w-5 h-5" aria-hidden="true" />Required Documents
@@ -163,7 +159,6 @@ export default function ChapPage() {
                 </ul>
               </div>
 
-              {/* Rules */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-cream-300">
                 <h2 className="font-heading font-bold text-forest-800 text-xl mb-4 flex items-center gap-2">
                   <BookOpen className="w-5 h-5" aria-hidden="true" />Program Rules &amp; Important Information
@@ -171,14 +166,13 @@ export default function ChapPage() {
                 <ul className="space-y-4" role="list">
                   {rules.map((rule, i) => (
                     <li key={i} className="flex items-start gap-3 font-body text-sm text-gray-700 leading-relaxed border-b border-cream-200 pb-4 last:border-0 last:pb-0">
-                      <span className="w-5 h-5 rounded-full bg-earth-100 border border-earth-300 text-earth-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5" aria-hidden="true">{i + 1}</span>
+                      <span className="w-5 h-5 rounded-full bg-earth-100 border border-earth-300 text-earth-700 flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">{i + 1}</span>
                       {rule}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Bottom CTA */}
               <div className="bg-earth-700 rounded-xl p-6 text-white text-center shadow-md">
                 <GraduationCap className="w-10 h-10 text-earth-300 mx-auto mb-3" aria-hidden="true" />
                 <h3 className="font-heading font-bold text-xl mb-2">Ready to Apply?</h3>
@@ -186,12 +180,9 @@ export default function ChapPage() {
                 <a href="/chap-application.pdf" download className="inline-flex items-center gap-2 bg-white text-earth-700 px-5 py-3 rounded-lg font-body font-semibold text-sm hover:bg-cream-200 transition-colors">
                   <Download className="w-4 h-4" aria-hidden="true" />Download CHAP Application (PDF)
                 </a>
-                <p className="text-earth-400 text-xs mt-3 font-body">Place real PDF at <code>/public/chap-application.pdf</code></p>
               </div>
             </div>
 
-
-            {/* Sidebar */}
             <aside className="space-y-6">
               <div className="card">
                 <h2 className="font-heading font-bold text-forest-800 text-base mb-4 border-b border-cream-300 pb-3">Eligibility Requirements</h2>
@@ -203,6 +194,7 @@ export default function ChapPage() {
                   ))}
                 </ul>
               </div>
+
               <div className="bg-red-50 border border-red-200 rounded-xl p-5">
                 <h3 className="font-heading font-bold text-red-800 text-sm mb-3">Not Eligible</h3>
                 <ul className="space-y-2" role="list">
@@ -213,6 +205,7 @@ export default function ChapPage() {
                   ))}
                 </ul>
               </div>
+
               <div className="card border-navy-200 bg-navy-50">
                 <h3 className="font-heading font-bold text-navy-800 text-base mb-2">Questions?</h3>
                 <p className="text-gray-600 font-body text-xs mb-3">Contact our office for help with your CHAP application.</p>
@@ -226,6 +219,7 @@ export default function ChapPage() {
                 </div>
               </div>
             </aside>
+
           </div>
         </div>
       </section>

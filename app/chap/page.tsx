@@ -190,3 +190,45 @@ export default function ChapPage() {
               </div>
             </div>
 
+
+            {/* Sidebar */}
+            <aside className="space-y-6">
+              <div className="card">
+                <h2 className="font-heading font-bold text-forest-800 text-base mb-4 border-b border-cream-300 pb-3">Eligibility Requirements</h2>
+                <ul className="space-y-3" role="list">
+                  {eligibility.map((req, i) => (
+                    <li key={i} className="flex items-start gap-2 font-body text-xs text-gray-700 leading-relaxed">
+                      <CheckCircle className="w-4 h-4 text-forest-600 mt-0.5 flex-shrink-0" aria-hidden="true" />{req}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                <h3 className="font-heading font-bold text-red-800 text-sm mb-3">Not Eligible</h3>
+                <ul className="space-y-2" role="list">
+                  {notEligible.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 font-body text-xs text-red-700">
+                      <X className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" aria-hidden="true" />{item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="card border-navy-200 bg-navy-50">
+                <h3 className="font-heading font-bold text-navy-800 text-base mb-2">Questions?</h3>
+                <p className="text-gray-600 font-body text-xs mb-3">Contact our office for help with your CHAP application.</p>
+                <a href="tel:+12077963351" className="btn-navy text-xs px-3 py-2 inline-flex items-center gap-1">
+                  <Phone className="w-3 h-3" aria-hidden="true" />(207) 796-3351
+                </a>
+                <div className="mt-2">
+                  <Link href="/contact" className="text-navy-700 font-body text-xs hover:text-navy-900 inline-flex items-center gap-1">
+                    Contact page <ChevronRight className="w-3 h-3" aria-hidden="true" />
+                  </Link>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

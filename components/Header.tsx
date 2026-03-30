@@ -39,7 +39,7 @@ export default function Header() {
         Passamaquoddy Tribe at Indian Township — Princeton, Maine
       </div>
       <div className="container-main">
-        <div className="flex items-center justify-between py-2">
+        <div className="flex items-center justify-between py-3">
 
           {/* Logo */}
           <Link
@@ -51,9 +51,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="Indian Township Housing Authority logo — tipi and house by the river"
-                width={64}
-                height={64}
-                className="w-14 h-14 object-contain drop-shadow-sm"
+                width={96}
+                height={96}
+                className="w-20 h-20 object-contain drop-shadow-sm"
                 priority
               />
             </div>

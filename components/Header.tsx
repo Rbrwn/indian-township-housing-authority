@@ -5,14 +5,15 @@ import { usePathname } from 'next/navigation';
 import { Menu, X, Home } from 'lucide-react';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/staff', label: 'Staff' },
-  { href: '/apply', label: 'Apply for Housing' },
-  { href: '/chap', label: 'CHAP' },
+  { href: '/',         label: 'Home' },
+  { href: '/about',    label: 'About' },
+  { href: '/staff',    label: 'Staff' },
+  { href: '/apply',    label: 'Apply for Housing' },
+  { href: '/chap',     label: 'CHAP' },
   { href: '/policies', label: 'Policies' },
-  { href: '/notices', label: 'Notices' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/notices',  label: 'Notices' },
+  { href: '/blog',     label: 'News' },
+  { href: '/contact',  label: 'Contact' },
 ];
 
 export default function Header() {
@@ -45,12 +46,12 @@ export default function Header() {
               <div className="text-xs text-green-400 font-body hidden sm:block">Passamaquoddy Tribe</div>
             </div>
           </Link>
-          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-1">
+          <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => {
               const isActive = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
               return (
                 <Link key={link.href} href={link.href}
-                  className={`px-3 py-2 rounded-md text-sm font-body font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white ${isActive ? 'bg-forest-700 text-white' : 'text-green-100 hover:bg-forest-700 hover:text-white'}`}
+                  className={`px-2.5 py-2 rounded-md text-xs font-body font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white ${isActive ? 'bg-forest-700 text-white' : 'text-green-100 hover:bg-forest-700 hover:text-white'}`}
                   aria-current={isActive ? 'page' : undefined}>{link.label}</Link>
               );
             })}
@@ -70,7 +71,7 @@ export default function Header() {
               return (
                 <li key={link.href}>
                   <Link href={link.href}
-                    className={`block px-4 py-3 rounded-md text-sm font-body font-medium transition-colors duration-150 ${isActive ? 'bg-forest-700 text-white' : 'text-green-100 hover:bg-forest-700 hover:text-white'}`}
+                    className={`block px-4 py-3 rounded-md text-sm font-body font-medium transition-colors ${isActive ? 'bg-forest-700 text-white' : 'text-green-100 hover:bg-forest-700 hover:text-white'}`}
                     aria-current={isActive ? 'page' : undefined}>{link.label}</Link>
                 </li>
               );

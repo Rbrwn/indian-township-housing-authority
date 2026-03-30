@@ -15,6 +15,7 @@ const docs = [
   { title:'CHAP Application',           description:'College Housing Assistance Program application. See the CHAP page for full program details and eligibility.',            file:'/chap-application.pdf',         category:'Application' },
   { title:'Maintenance Request Form',   description:'Use this form to submit a written maintenance request for your unit. You may also call the office directly.',            file:'/maintenance-request.pdf',      category:'Form' },
   { title:'Lease Agreement (Sample)',   description:'Sample standard residential lease agreement used by the Indian Township Housing Authority.',                              file:'/sample-lease-agreement.pdf',   category:'Form' },
+  { title:'Rural Development 515 Application', description:'Application for the Rural Development 515 Senior Apartment Program — Pines I & II Senior Apartments at Indian Township.',  file:'/rural-development-515-application.pdf', category:'Application' },
 ];
 
 const highlights = [

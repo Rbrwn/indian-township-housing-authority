@@ -32,10 +32,7 @@ export default function ContactPage() {
     if (Object.keys(v).length > 0) { setErrors(v); return; }
     setStatus('submitting');
     try {
-      // Sends directly to fbrown0625@gmail.com via Formspree
-      // To activate: go to https://formspree.io, create a free account,
-      // create a form pointed at fbrown0625@gmail.com, and replace YOUR_FORM_ID below.
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xpqodbge', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({

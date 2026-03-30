@@ -109,18 +109,18 @@ export default function ContactPage() {
               </address>
               <div className="rounded-xl overflow-hidden border border-cream-300 shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.9380883735712!2d-67.57647!3d45.24126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca98e3b6adb5555%3A0xd0b22b5e9d3e3a7c!2s10+Raven+Rd%2C+Princeton%2C+ME+04668!5e0!3m2!1sen!2sus!4v1711900000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d939.7219648912711!2d-67.58876322885085!3d45.23798166031663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca58ad4b377bab7%3A0xc6a6ba49ae2938cc!2sRes%2C%2010%20Raven%20Dr%2C%20Maine%2004668!5e0!3m2!1sen!2sus!4v1774902925924!5m2!1sen!2sus"
                   width="100%"
-                  height="250"
+                  height="260"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Indian Township Housing Authority location — 10 Raven Rd, Princeton, ME 04668"
+                  title="Indian Township Housing Authority — 10 Raven Dr, Princeton, ME 04668"
                 />
               </div>
               <a
-                href="https://maps.google.com/?q=10+Raven+Rd+Princeton+ME+04668"
+                href="https://maps.app.goo.gl/uUyLvUUFngjh6ruG7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-xs font-body text-navy-700 hover:text-navy-900 underline mt-1"

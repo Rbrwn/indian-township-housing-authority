@@ -107,12 +107,27 @@ export default function ContactPage() {
                   </div>
                 </div>
               </address>
-              <div className="rounded-xl overflow-hidden border border-cream-300 shadow-sm bg-forest-50 h-44 flex flex-col items-center justify-center text-center p-4" role="img" aria-label="Map placeholder">
-                <MapPin className="w-8 h-8 text-forest-400 mb-2" aria-hidden="true" />
-                <p className="text-forest-700 font-body text-sm font-semibold">10 Raven Rd, Princeton, ME 04668</p>
-                <a href="https://maps.google.com/?q=10+Raven+Rd+Princeton+ME+04668" target="_blank" rel="noopener noreferrer" className="mt-2 text-xs font-body text-navy-700 underline hover:text-navy-900">Open in Google Maps ↗</a>
-                <p className="text-gray-400 font-body text-xs mt-1">📍 Replace with Google Maps embed</p>
+              <div className="rounded-xl overflow-hidden border border-cream-300 shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.9380883735712!2d-67.57647!3d45.24126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca98e3b6adb5555%3A0xd0b22b5e9d3e3a7c!2s10+Raven+Rd%2C+Princeton%2C+ME+04668!5e0!3m2!1sen!2sus!4v1711900000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Indian Township Housing Authority location — 10 Raven Rd, Princeton, ME 04668"
+                />
               </div>
+              <a
+                href="https://maps.google.com/?q=10+Raven+Rd+Princeton+ME+04668"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-body text-navy-700 hover:text-navy-900 underline mt-1"
+              >
+                <MapPin className="w-3 h-3" aria-hidden="true" />
+                Open in Google Maps ↗
+              </a>
             </div>
 
             <div className="card">

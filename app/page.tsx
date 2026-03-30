@@ -124,7 +124,7 @@ export default function HomePage() {
           <h2 className="section-heading mb-3">Have Questions?</h2>
           <p className="text-gray-600 font-body mb-6 max-w-lg mx-auto">Our office is open Monday–Friday. We are happy to assist you with housing questions, applications, or any other needs.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+12077963351" className="btn-primary"><Phone className="w-4 h-4" aria-hidden="true" />(207) 796-3351</a>
+            <a href="tel:+12077968004" className="btn-primary"><Phone className="w-4 h-4" aria-hidden="true" />(207) 796-8004</a>
             <Link href="/contact" className="btn-secondary">Contact Page <ChevronRight className="w-4 h-4" aria-hidden="true" /></Link>
           </div>
         </div>

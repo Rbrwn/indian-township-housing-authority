@@ -43,6 +43,7 @@ export default function ContactPage() {
           message: form.message,
           _replyto: form.email,
           _subject: `ITHA Website Contact: ${form.subject}`,
+          _gotcha: '',
         }),
       });
       if (response.ok) {

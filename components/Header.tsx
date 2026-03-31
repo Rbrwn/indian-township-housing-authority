@@ -1,9 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home } from 'lucide-react';
 
 const navLinks = [
   { href: '/',         label: 'Home' },
@@ -38,7 +37,7 @@ export default function Header() {
         Passamaquoddy Tribe at Indian Township — Princeton, Maine
       </div>
       <div className="container-main">
-        <div className="flex items-center justify-between py-3">
+        <div className="flex items-center justify-between py-2">
 
           {/* Logo */}
           <Link
@@ -46,15 +45,8 @@ export default function Header() {
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-lg p-1"
             aria-label="Indian Township Housing Authority — Home"
           >
-            <div className="flex-shrink-0">
-              <Image
-                src="/logo.png"
-                alt="Indian Township Housing Authority logo — tipi and house by the river"
-                width={120}
-                height={120}
-                className="w-28 h-28 object-contain drop-shadow-sm"
-                priority
-              />
+            <div className="w-12 h-12 rounded-full bg-earth-700 border-2 border-earth-600 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <Home className="w-6 h-6 text-white" />
             </div>
             <div>
               <div className="font-heading font-bold text-sm sm:text-base leading-tight">

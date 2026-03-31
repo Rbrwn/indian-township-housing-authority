@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://indiantownshiphousing.org';
-  const routes = ['', '/about', '/staff', '/apply', '/chap', '/policies', '/notices', '/contact'];
+  const routes = ['', '/about', '/staff', '/apply', '/chap', '/policies', '/updates', '/contact'];
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

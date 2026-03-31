@@ -21,8 +21,7 @@ export default function Footer() {
                 { href:'/apply',    label:'Apply for Housing' },
                 { href:'/chap',     label:'College Housing Assistance (CHAP)' },
                 { href:'/policies', label:'Housing Policies' },
-                { href:'/notices',  label:'Tenant Notices' },
-                { href:'/blog',     label:'News & Announcements' },
+                { href:'/updates',  label:'Notices & News' },
                 { href:'/contact',  label:'Contact Us' },
               ].map((link) => (
                 <li key={link.href}>

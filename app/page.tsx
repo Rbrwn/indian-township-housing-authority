@@ -13,7 +13,7 @@ const quickActions = [
   { href:'/apply',    icon:Home,          title:'Apply for Housing',   description:'Download and submit a housing application for Indian Township rental units.',                               variant:'green' as const },
   { href:'/chap',     icon:GraduationCap, title:'Apply for CHAP',      description:'College Housing Assistance Program — financial support for enrolled tribal students.',                    variant:'brown' as const },
   { href:'/staff',    icon:Users,         title:'Meet Our Staff',      description:'Connect with our housing team — we are here to help tribal members.',                                    variant:'navy'  as const },
-  { href:'/notices',  icon:Bell,          title:'Tenant Notices',      description:'Current announcements, reminders, and updates for housing residents.',                                   variant:'green' as const },
+  { href:'/updates',  icon:Bell,          title:'Notices & News',      description:'Tenant notices, program announcements, and community news.',                                   variant:'green' as const },
   { href:'/policies', icon:FileText,      title:'Policies & Forms',    description:'Download housing policies, rental agreements, and required forms.',                                      variant:'brown' as const },
   { href:'/contact',  icon:Phone,         title:'Contact Us',          description:'Reach our office by phone, fax, or in person at our Princeton location.',                               variant:'navy'  as const },
 ];

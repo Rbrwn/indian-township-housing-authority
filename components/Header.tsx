@@ -12,8 +12,7 @@ const navLinks = [
   { href: '/apply',    label: 'Apply for Housing' },
   { href: '/chap',     label: 'CHAP' },
   { href: '/policies', label: 'Policies' },
-  { href: '/notices',  label: 'Notices' },
-  { href: '/blog',     label: 'News' },
+  { href: '/updates',  label: 'Notices & News' },
   { href: '/contact',  label: 'Contact' },
 ];
 
@@ -51,9 +50,9 @@ export default function Header() {
               <Image
                 src="/logo.png"
                 alt="Indian Township Housing Authority logo — tipi and house by the river"
-                width={96}
-                height={96}
-                className="w-20 h-20 object-contain drop-shadow-sm"
+                width={120}
+                height={120}
+                className="w-28 h-28 object-contain drop-shadow-sm"
                 priority
               />
             </div>

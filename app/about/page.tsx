@@ -61,9 +61,7 @@ export default function AboutPage() {
             </div>
             <aside className="space-y-6">
               <div className="relative rounded-xl overflow-hidden shadow aspect-square">
-                {/* REPLACE with real community photo */}
-                <Image src="https://picsum.photos/seed/maine-woods/500/500" alt="Indian Township — placeholder" fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
-                <div className="absolute bottom-0 inset-x-0 bg-forest-800/70 text-white text-xs p-2 text-center font-body">📷 Replace with real community photo</div>
+                <Image src="/community-photo.png" alt="Indian Township Housing Authority — tipi and log cabin illustration" fill className="object-contain bg-white p-4" sizes="(max-width:1024px) 100vw, 33vw" />
               </div>
               <div className="card">
                 <h3 className="font-heading font-bold text-forest-800 text-base mb-4">At a Glance</h3>

@@ -11,6 +11,21 @@ export const metadata: Metadata = {
 
 // ── EDIT THIS ARRAY TO UPDATE NOTICES — no other changes needed ──
 export const notices: Notice[] = [
+  
+  {
+    id: 'notice-2026-06-16',
+    date: 'June 16th, 2026',
+    title: 'Administrative Meeting',
+    body: 'Discussion of Housing Buisness, finaces, etc., Held the 3rd Tuesday of every month @ 4:00PM @ The Housing Office.',
+    type: 'meeting',
+  },
+  {
+    id: 'notice-2026-06-16',
+    date: 'June 16th, 2026',
+    title: 'Monthly Meetings',
+    body: 'A reminder that meetings are held the second Tuesday of each month @ 5:00 PM Held @ The Housing Office (Assigning Housing Units, Open to the public)',
+    type: 'meeting',
+  },
   {
     id: 'notice-2025-07-01',
     date: 'July 1, 2025',

@@ -41,7 +41,7 @@ export default function ContactPage() {
           phone: form.phone,
           subject: form.subject,
           message: form.message,
-          _replyto: form.email,
+          _replyto: 'fbrown0625@gmail.com',
           _subject: `ITHA Website Contact: ${form.subject}`,
           _gotcha: '',
         }),

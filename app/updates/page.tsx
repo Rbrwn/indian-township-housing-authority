@@ -34,7 +34,6 @@ export const notices: Notice[] = [
     body: 'A reminder that meetings are held the second Tuesday of each month @ 5:00 PM Held @ The Housing Office (Assigning Housing Units, Open to the public)',
     type: 'meeting',
   },
-
   {
     id: 'notice-2025-07-01',
     date: 'July 1, 2025',
@@ -48,13 +47,6 @@ export const notices: Notice[] = [
     title: 'Annual Housing Inspections — Scheduled for July',
     body: 'Annual unit inspections will be conducted throughout July. You will receive written notice with your specific inspection date and time at least 48 hours in advance. Please ensure your unit is accessible on the scheduled date.',
     type: 'info',
-  },
-  {
-    id: 'notice-2025-06-05',
-    date: 'June 5, 2025',
-    title: 'Housing Authority Board Meeting — June 20, 2025',
-    body: 'The Indian Township Housing Authority will hold a regular board meeting on Friday, June 20, 2025 at 10:00 AM at the Tribal Community Center. Tribal members are welcome to attend. Contact the office for the agenda.',
-    type: 'meeting',
   },
   {
     id: 'notice-2025-05-20',
